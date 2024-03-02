@@ -1,0 +1,1 @@
+"localhost	Thought Of The Day	0	OK: There is a thought of the day in the last 5 days."

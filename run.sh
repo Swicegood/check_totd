@@ -19,4 +19,6 @@ docker run --rm -i -v $DIR_PATH:/app/result jagadguru/check_totd
 if [ -f $DIR_PATH/result.txt ]; then
   cat $DIR_PATH/result.txt
   docker run --rm -e EXTERNAL_COMMAND="$(cat $DIR_PATH/result.txt)" jagadguru/send_nsca
+else
+  echo "result.txt not found"
 fi

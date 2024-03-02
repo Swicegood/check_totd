@@ -45,11 +45,11 @@ if __name__ == "__main__":
     if result:
         # put into result file /result/result.txt
         with open('./result/result.txt', 'w') as f:
-            f.write('"localhost\tThought Of The Day\t0\tOK: There is a thought of the day in the last 5 days."')
+            f.write("localhost\tThought Of The Day\t0\tOK: There is a thought of the day in the last 5 days.")
         print("OK: There is a thought of the day in the last 5 days.")
         print("Check the result file at /result/result.txt")
     else:    
         with open('./result/result.txt', 'w') as f:
-            f.write('"localhost\tThought Of The Day\t2\tCRITICAL: There is no thought of the day in the last 5 days."')
+            f.write("localhost\tThought Of The Day\t2\tCRITICAL: There is no thought of the day in the last 5 days.")
         print("CRITICAL: There is no thought of the day in the last 5 days.")
         print("Check the result file at /result/result.txt")
